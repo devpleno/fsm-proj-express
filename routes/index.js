@@ -1,12 +1,8 @@
 const express = require('express')
 const router = express.Router()
+const indexController = require('../controllers/index')
 
-router.get('/', (req, res) => {
-  res.send('Fullstack Master')
-})
-
-router.get('/pagina1', (req, res) => {
-  res.send('Fullstack Master')
-})
+router.get('/', indexController.home)
+router.get('/pagina1', indexController.pagina1)
 
 module.exports = router
