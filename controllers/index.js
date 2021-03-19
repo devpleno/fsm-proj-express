@@ -17,8 +17,18 @@ const calc = (req, res) => {
   }
 }
 
+const par = (req, res) => {
+  const isPar = (req.params.num % 2) === 0
+  if (isPar) {
+    res.send('Número é Par')
+  } else {
+    res.send('Número é Impar')
+  }
+}
+
 module.exports = {
   home,
   pagina1,
-  calc
+  calc,
+  par
 }
