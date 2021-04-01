@@ -1,3 +1,13 @@
 <%- include('partials/header') %>
     <p><%=time %></p>
+    <ul>
+        <% lista.forEach((item) => { %>
+            <li><%= item %></li>
+        <% }) %>
+    </ul>
+    <ul>
+        <% animais.forEach((item) => { %>
+            <li><%= item.name %></li>
+        <% }) %>
+    </ul>
 <%- include('partials/footer') %>

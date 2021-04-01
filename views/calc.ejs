@@ -1,3 +1,8 @@
 <%- include('partials/header') %>
     <p>A Soma é: <%= soma %></p>
+    <% if(soma%2===0){ %>
+        <p>A soma é par</p>
+    <% } else { %>
+        <p>A soma é impar.</p>
+    <% } %>
 <%- include('partials/footer') %>

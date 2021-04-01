@@ -1,8 +1,14 @@
 const home = (req, res) => {
-  // res.send('Fullstack Master')
-  // res.render('home')
   res.render('home', {
-    time: new Date().getTime()
+    time: new Date().getTime(),
+    lista: ['Tulio', 'Faria', 'Teste'],
+    animais: [
+      { name: 'Teca' },
+      { name: 'Tica' },
+      { name: 'Branca' },
+      { name: 'Tiazinha' },
+      { name: 'Bolinha' }
+    ]
   })
 }
 
